@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5488/5488065.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>FICHA CADASTRAL - PESSOA JURÍDICA</h1>
+    <h2>1. Identificação</h2>
+    <hr>
+    <form method="post" enctype="multipart/form-data" action="resultado.html">
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <label for="razao_social">Razão Social*:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input id="razao_social" type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nome_f">Nome Fantasia*: </label>
+                    <input id="nome_f" type="text" required>
+                </td>
+                <td colspan="4">
+                    <label for="CNPJ">CNPJ*:</label>
+                    <input id="CNPJ" type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inscricao-est">Inscrição Estadual*:</label>
+                    <input id="inscricao-est" type="text" required>
+                </td>
+                <td colspan="4">
+                    <label for="inscricao-mun">Inscrição Municipal*: </label>
+                    <input id="inscricao-mun" type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label for="ende">Endereço*:</label>
+                    <input id="ende" type="text" required size="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bairro">Bairro*:</label>
+                    <input id="bairro" type="text" required>
+                </td>
+                <td>
+                    <label for="cidade">Cidade*: </label>
+                    <input id="cidade" type="text" required>
+                </td>
+                <td colspan="2">
+                    <label for="CEP">CEP*: </label>
+                    <input id="CEP" type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comprador">Comprador*:</label>
+                    <input id="comprador" type="text" required>
+                </td>
+                <td colspan="3">
+                    <label for="email_compras">E-mail Compras*:</label>
+                    <input id="email_compras" type="email" size="50" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fone">Fone (DDD - n,º)*:</label>
+                    <input id="fone" type="tel" required>
+                </td>
+                <td>
+                    <label for="cel">Cel (DDD - n,º)*:</label>
+                    <input id="cel" type="tel" required>
+                </td>
+                <td colspan="2">
+                    <label for="email_NFe">E-mail NFe*:</label>
+                    <input id="email_NFe" type="email" required size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Data">Data de Fundação*:</label>
+                    <input id="Data" type="date" required>
+                </td>
+                <td>
+                    <label>Capital Social Atual*:</label>
+                    <input type="number" placeholder="R$(Apenas números)">
+                </td>
+                <td>
+                    <label for="Junta">Reg. na Junta*:</label>
+                    <br>
+                    <input id="Junta" type="text" required>
+                </td>
+                <td>
+                    <p>Controle Acionário:</p>
+                    <input id="nacional" type="radio" name="controle_acionario" value="nacional">
+                    <label for="nacional">Nacional</label>
+                    <input id="estrangeiro" type="radio" name="controle_acionario">
+                    <label for="estrangeiro">Estrangeiro</label>
+                    <input id="estatal" type="radio" name="controle_acionario">
+                    <label for="estatal">Estatal</label>
+                </td>
+            </tr>
+        </table>
+        <h2>2. Sócios*</h2>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>% Capital</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+        </table>
+        <h2>3. Referências Bancárias*</h2>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Banco</th>
+                    <th>Agência/ Conta Corrente</th>
+                    <th>Contato</th>
+                    <th>Fone (DDD - nº)</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="tel" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+        </table>
+        <h2>4. Referências Comerciais*</h2>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Principais fornecedores</th>
+                    <th>CNPJ</th>
+                    <th>Fone (DDD - nº)</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td>
+                    <input type="tel" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2>5. Documentação Necessária*</h2>
+        <hr>
+        <table border="1">
+            <tr>
+                <td>Cópia Contrato Social e última alteração</td>
+            </tr>
+            <tr>
+                <td>Cópia documentos dos sócios, sindico (ex: RG e CPF ou CNH)</td>
+            </tr>
+            <tr>
+                <td>Cópia do último comprovante de endereço da empresa (ex: luz, telefone)</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Para Condomínios: </b> Cópia da ata de assembleia e estatuto.
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        <label for="consultor">Consultor: </label>
+                        <input id="consultor" type="text" size="10">
+                        <label for="tele">Tel: </label>
+                        <input id="tele" type="tel" size="10">
+                        <label for="email-fim">E-mail: </label>
+                        <input id="email-fim" type="email">
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <h3>*Informações de preenchimento/entrega obrigatório.</h3>
+        <br>
+        <input type="submit" value="Enviar Formulário">
+    </form>
+</body>
+</html>
